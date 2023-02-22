@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,footer
+section,article{
+    display:block;
+}
+
+h1{
+	text-shadow: 30px  black; /*ให้ฟ้อนมีเงา*/
+}
+/* Article styles: */
+
+#page{ /*id ใช้กำหนดได้ครั้งเดียว*/
+	
+	margin:0 auto;
+	position:relative; /*ตำแหน่งตามมาตรปฐาน*/
+}
+header h1 span{
+    color: rgb(255, 47, 65);
+    text-shadow: 30em black;
+    font-size: 60px;
+
+}
+header h1{
+    font-size: 60px;
+}
+header p{
+    font-size: 20px;
+}
+ul{
+    padding: 0;
+}
+ol{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+#header{
+   
+    background-color: #53A7D8;
+    color:  white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#main{
+    float: left;
+    width: 69%;
+}
+
+#sidebar {
+    float: right;
+    width: 29%;
+}
+
+.clr {
+    clear: both;
+}
+footer{
+	margin-bottom:30px; /*ขอบล่างอย่างเดียว */
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+    background-color:#53A7D8;
+}
+footer p span{color: #fff;}
+section iframe{
+    margin-left: 20px;
+}
+
+
+/*หัวข้อCovid News*/
+#news{
+    color: rgb(255, 0, 0);
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+
+/*กล่องsidemenu*/
+nav{ 
+	background:url(image/Bluebg.png) repeat-x 50% 50% #f8f8f8;/*background:urlใช้สำหรับดึงรูปภาพมาทำbackground  repeat-xทวนไปทางแนวนอน*/
+	padding:0 -10px; 
+	position:absolute; /*absoluteเป็นการจัดตำแหน่งตามอิสระโดยยึดจากbody แต่อันนี้อยู่ภายใต้navก็จะยึดตามnav*/
+	right:0;
+	top:-em;
+	margin-top: 20px;
+    
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333; /*ใช้อันนี้แทน2อันบนได้เลย*/
+    border-radius:10px;
+}
+
+nav ol li a, /*ankleที่อยู่ภายใต้listแล้วก็อยู่ภายใต้ulแล้วก็อยู่ภายใต้nav*/
+nav ol li a:visited{
+    
+	color:#003bfd;
+	font-weight:bold;
+	text-shadow:0 0px 1px white;
+	text-transform:uppercase;
+    margin-left: 20px;
+}
+nav ol li a:hover{
+	text-decoration:none;
+	background-color:#ffffff;
+    color: rgb(147, 56, 252);
+}
+nav h3{
+    margin-top: -20px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+nav ol li{
+    color:#003bfd;
+}
+/*กล่องของข่าว*/
+article{
+	background-color:#2D82B5 ;
+	
+	
+	margin-left: 10px;
+	text-shadow:0 2px 0 black;
+    border-radius:10px;
+    height: 350px;
+    
+}
+.line{
+	/* The dividing line: */
+	height:1px;
+	
+	border-bottom:1px solid #416371; /*ขอบล่าง*/
+	margin: 1em 0;
+    margin-left: 10px;
+	overflow:hidden; /*เราสร้างกล่องlayoutเอาไว้แล้วเราใส่ข้อความไว้ในนั้น */
+	/*ถ้าเป็นhiddenมันจะซ่อนข้อความที่เลยออกมาจากกล่องและมีscroll barให้เราเลื่อนข้างในได้ แต่ถ้าvisibleมันจะโชว์ข้อความที่เลยออกมาจากกล่อง*/
+}
+figure{ /*figureคือtagของรูปภาพ ส่วนใหญ่จะใช้ภายใต้tag article*/
+	
+	/*ให้จัดลอยไปทางขวา เพราะปกติlayoutจะอยู่ด้านซ้าย*/
+	height:400px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+article p {
+    margin-top: -300px;
+    float: right;
+    color: white;
+    margin-right: 60px;
+    font-size: 26px;
+}
+article p a{
+    margin-top: -100px;
+   
+    color: white;
+    font-size: 28px;
+}
+article p a:hover{
+    
+    text-decoration:none;
+	
+    color: rgb(244, 255, 140);
+}
+
+figure img{ /*ใช้imgภายใต้figure*/
+    margin-top: 20px;
+	margin-left:20px;
+}
+#articles h2{
+    font-size: 50px;
+    color: rgb(55, 85, 255);
+}
+#article2 p{
+   margin-left: -20px;
+}
+
+
+
+

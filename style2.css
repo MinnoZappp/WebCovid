@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,footer
+section,article{
+    display:block;
+}
+
+h1{
+	text-shadow: 30px  black; /*ให้ฟ้อนมีเงา*/
+}
+/* Article styles: */
+
+#page{ /*id ใช้กำหนดได้ครั้งเดียว*/
+	
+	margin:0 auto;
+	position:relative; /*ตำแหน่งตามมาตรปฐาน*/
+}
+header h1 span{
+    color: rgb(255, 47, 65);
+    text-shadow: 30em black;
+    font-size: 60px;
+
+}
+header h1{
+    font-size: 60px;
+}
+header p{
+    font-size: 20px;
+}
+ul{
+    padding: 0;
+    color: white;
+    margin-left: 60px;
+}
+ol{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+#header{
+   
+    background-color: #015c92 ;
+    color:  white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#main{
+    float: left;
+    width: 69%;
+}
+
+#sidebar {
+    float: right;
+    width: 29%;
+}
+
+.clr {
+    clear: both;
+}
+footer{
+	margin-bottom:30px; /*ขอบล่างอย่างเดียว */
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+    background-color: #015c92;
+}
+footer p span{color: #fff;}
+
+
+
+/*หัวข้อCovid-Information*/
+#info{
+    color: rgb(12, 8, 255);
+    font-size: 35px;
+}
+
+
+/*กล่องsidemenu*/
+nav{ 
+	background:url(image/Bluebg.png) repeat-x 50% 50% #f8f8f8;/*background:urlใช้สำหรับดึงรูปภาพมาทำbackground  repeat-xทวนไปทางแนวนอน*/
+	padding:0 -10px; 
+	position:absolute; /*absoluteเป็นการจัดตำแหน่งตามอิสระโดยยึดจากbody แต่อันนี้อยู่ภายใต้navก็จะยึดตามnav*/
+	right:0;
+	top:-em;
+	margin-top: 20px;
+    
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333; /*ใช้อันนี้แทน2อันบนได้เลย*/
+    border-radius:10px;
+}
+
+nav ol li a, /*ankleที่อยู่ภายใต้listแล้วก็อยู่ภายใต้ulแล้วก็อยู่ภายใต้nav*/
+nav ol li a:visited{
+    
+	color:#003bfd;
+	font-weight:bold;
+	text-shadow:0 0px 1px white;
+	text-transform:uppercase;
+    margin-left: 20px;
+}
+nav ol li a:hover{
+	text-decoration:none;
+	background-color:#ffffff;
+    color: rgb(147, 56, 252);
+}
+nav h3{
+    margin-top: -20px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+nav ol li{
+    color:#003bfd;
+}
+/*กล่องของข่าว*/
+article{
+	background-color:#2D82B5 ;
+	
+	
+	margin-left: 10px;
+	text-shadow:0 2px 0 black;
+    border-radius:10px;
+    height: 350px;
+    
+}
+article:hover{
+    box-shadow:0 1px 1px #333333;
+}
+#article4{
+    height: 700px;
+}
+#article4 ul li{
+    margin-top: 10px;
+}
+#article1{
+    height: 400px;
+}
+.line{
+	/* The dividing line: */
+	height:1px;
+	
+	border-bottom:1px solid #ffffff; /*ขอบล่าง*/
+	margin: 1em 0;
+    margin-left: 10px;
+	overflow:hidden; /*เราสร้างกล่องlayoutเอาไว้แล้วเราใส่ข้อความไว้ในนั้น */
+	/*ถ้าเป็นhiddenมันจะซ่อนข้อความที่เลยออกมาจากกล่องและมีscroll barให้เราเลื่อนข้างในได้ แต่ถ้าvisibleมันจะโชว์ข้อความที่เลยออกมาจากกล่อง*/
+}
+
+article p {
+    margin-top: -35px;
+    float: left;
+    color: white;
+    margin-left: 30px;
+    font-size: 23px;
+}
+
+#articles h2{
+    font-size: 50px;
+    color: rgb(149, 9, 214);
+    margin-left: 20px;
+    padding-top: 10px;
+
+}
+#article2 p{
+   margin-left: -20px;
+}
+#info img{
+    margin-left: 20px;
+}
+#info h2{
+    margin-left: 20px;
+}
+#article1 h2{
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+ }
+ #article2 h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#article4 h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#article3 h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#article5 h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#article6 h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#articles h1{
+    font-size: 35px;
+    margin-left: 10px;
+}
+#articles ul li{
+    font-size: 20px;
+    color: rgb(251, 255, 213);
+}
+#articles h1 span{
+    color: crimson;
+    font-size: 50px;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%;
+    margin-left: 30px;
+}
+
+
+  
+  
+  
+
+
+

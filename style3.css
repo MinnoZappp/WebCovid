@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header,footer
+section,article
+figure{
+    display:block;
+}
+
+h1{
+	text-shadow: 30px  black; /*ให้ฟ้อนมีเงา*/
+}
+/* Article styles: */
+
+#page{ /*id ใช้กำหนดได้ครั้งเดียว*/
+	
+	margin:0 auto;
+	position:relative; /*ตำแหน่งตามมาตรปฐาน*/
+}
+header h1 span{
+    color: rgb(255, 47, 65);
+    text-shadow: 30em black;
+    font-size: 40px;
+
+}
+header h1{
+    font-size: 60px;
+}
+header p{
+    font-size: 20px;
+}
+
+ol{
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+#header{
+   
+    background-color: #015c92 ;
+    color:  white;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#main{
+    float: left;
+    width: 69%;
+}
+
+#sidebar {
+    float: right;
+    width: 29%;
+}
+
+.clr {
+    clear: both;
+}
+footer{
+	margin-bottom:30px; /*ขอบล่างอย่างเดียว */
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+    background-color: #015c92;
+}
+footer p span{color: #fff;}
+
+
+
+/*หัวข้อApp*/
+#contact{
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+
+/*กล่องsidemenu*/
+nav{ 
+	background:url(image/Bluebg.png) repeat-x 50% 50% #f8f8f8;/*background:urlใช้สำหรับดึงรูปภาพมาทำbackground  repeat-xทวนไปทางแนวนอน*/
+	padding:0 -10px; 
+	position:absolute; /*absoluteเป็นการจัดตำแหน่งตามอิสระโดยยึดจากbody แต่อันนี้อยู่ภายใต้navก็จะยึดตามnav*/
+	right:0;
+	top:-em;
+	margin-top: 20px;
+    
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333; /*ใช้อันนี้แทน2อันบนได้เลย*/
+    border-radius:10px;
+}
+
+nav ol li a, /*ankleที่อยู่ภายใต้listแล้วก็อยู่ภายใต้ulแล้วก็อยู่ภายใต้nav*/
+nav ol li a:visited{
+    
+	color:#003bfd;
+	font-weight:bold;
+	text-shadow:0 0px 1px white;
+	text-transform:uppercase;
+    margin-left: 20px;
+}
+nav ol li a:hover{
+	text-decoration:none;
+	background-color:#ffffff;
+    color: rgb(147, 56, 252);
+}
+nav h3{
+    margin-top: -20px;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+}
+nav ol li{
+    color: #003bfd;
+}
+/*กล่องของข่าว*/
+article{
+	background-color:#015c92 ;
+	margin-left: 10px;
+	text-shadow:0 2px 0 black;
+    border-radius:10px;
+    height: 550px;
+    
+}
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#000000;
+	border-bottom:1px solid white; /*ขอบล่าง*/
+	margin: 1em 0;
+    margin-left: 10px;
+	overflow:hidden; /*เราสร้างกล่องlayoutเอาไว้แล้วเราใส่ข้อความไว้ในนั้น */
+	/*ถ้าเป็นhiddenมันจะซ่อนข้อความที่เลยออกมาจากกล่องและมีscroll barให้เราเลื่อนข้างในได้ แต่ถ้าvisibleมันจะโชว์ข้อความที่เลยออกมาจากกล่อง*/
+}
+figure{ /*figureคือtagของรูปภาพ ส่วนใหญ่จะใช้ภายใต้tag article*/
+	
+	/*ให้จัดลอยไปทางขวา เพราะปกติlayoutจะอยู่ด้านซ้าย*/
+	height:400px;
+    float: right;
+	margin-left:-50px;
+	overflow:hidden;
+	width:500px;
+    border-radius:px;
+}
+
+figure:hover{ /*เอาเม้าส์จ่อบนภาพ*/
+	-moz-box-shadow:0 0 2px #4D7788; 
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 -1px #4D7788; /*อันล่างจะsupport browserใหม่ 2อันด้านบนจะsupport browserเก่า จะมีไว้ด้วยก้ได้*/
+}
+
+article p a{
+    color: yellow;
+}
+article p a:visited{
+    color: yellow
+}
+article p a:hover{
+    color: white;
+}
+
+
+figure img{ /*ใช้imgภายใต้figure*/
+    margin-top: 20px;
+	margin-left:20px;
+}
+
+#articles h2{
+    font-size: 35px;
+    color: rgb(73, 12, 12);
+    margin-left: 10px;
+}
+#article2 p{
+    
+    color: white;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+#article1 h2{
+    color: white;
+    margin-left: 10px;
+}
+#article3 p{
+    margin-top: -10px;
+    
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#article4 p{
+    
+    color: white;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+#article2 h2{
+    color: white;
+    margin-left: 10px;
+}
+#article3 h2{
+    color: white;
+    margin-left: 10px;
+}
+#article4 h2{
+    color: white;
+    margin-left: 10px;
+}
+#article1{
+    height: 400px;
+}
+#article1 figure img{
+    margin-top: -30px;
+}
+#article1 p{
+   
+    color: white;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+#article4{
+    height: 480px;
+}
+#article3{
+    height: 480px;
+}
